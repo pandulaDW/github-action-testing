@@ -1,0 +1,19 @@
+# This is a basic workflow to help you get started with Actions
+
+# set workflow name
+name: First Workflow
+
+# run on manual trigger
+on: workflow_dispatch
+
+# define the jobs to be run (jobs can run parellly)
+jobs:
+  first-job:
+    name: Echo useless stuff
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo greeting
+        run: echo "Hello, Github Actions!!"
+      - name: Echo goodbye
+        run: echo "Done, bye!"
+  
